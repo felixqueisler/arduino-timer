@@ -1,7 +1,11 @@
 # arduino-timer
-Non-blocking abstracted timer library for use instead of the blocking `delay()`
-function. It's relatively low-end, with no callback functions. The timer states
-need to be checked manually.
+With this Library you can add **non-blocking timers** instead of the blocking 
+`delay()` function. It's very slim and takes little to no performance.
+It's relatively low-end, with no callback functions. The timer states need to
+be checked manually.
+
+**Warning:** This library doesn't work like a hardware timer and doesn't
+guarantee that code is being run in time.
 
 ## How to use
 
