@@ -22,18 +22,12 @@ public:
 
   /* Starts the timer now
    */
-  void start(unsigned long start_time = 0);
+  void start();
+ 
   /* Starts the timer
    *
    * param start_time: Sets a starting point in the past or future in ms from
    * the start of the microcontroller. 0 will default to current millis()
-   */
-  void start(unsigned long start_time = 0);
-  /* Starts the timer
-   *
-   * param start_time: Sets a starting point in the past or future in ms from
-   * the start of the microcontroller. 0 will default to current millis()
-   * param compensate_overflow: Activates overflow to keep a rythm
    */
   void start(unsigned long start_time = 0);
 

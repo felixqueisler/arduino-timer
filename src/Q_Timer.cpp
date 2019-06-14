@@ -41,20 +41,6 @@ void Timer::start(unsigned long start_time) {
   this->running = true;
 }
 
-void Timer::start(unsigned long start_time) {
-  unsigned long now = millis();
-
-  if (start_time > 0)
-    this->starting_point = now - start_time;
-  else if (this->elapsed > 0)
-    this->starting_point = now - this->elapsed;
-  else
-    this->starting_point = now;
-
-  this->elapsed = 0;
-  this->running = true;
-}
-
 void Timer::enable(int case) {
   switch {
   case COMPENSATE_OVERFLOW:
