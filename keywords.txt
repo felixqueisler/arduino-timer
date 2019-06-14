@@ -1,0 +1,29 @@
+#######################################
+# Syntax Coloring Map for Arduino Timer
+#######################################
+
+#######################################
+# Classes (KEYWORD1)
+#######################################
+
+Timer	KEYWORD1
+
+#######################################
+# Functions (KEYWORD2)
+#######################################
+
+start	KEYWORD2
+enable	KEYWORD2
+disable	KEYWORD2
+pause	KEYWORD2
+stop	KEYWORD2
+update	KEYWORD2
+restart	KEYWORD2
+isRinging	KEYWORD2
+isRunning	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+COMPENSATE_OVERFLOW	LITERAL1
