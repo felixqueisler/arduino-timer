@@ -4,6 +4,8 @@ With this Library you can add **non-blocking timers** instead of the blocking
 It's relatively low-end, with no callback functions. The timer states need to
 be checked manually.
 
+Uses millis(), means it works in milliseconds and supports time-rollover.
+
 **Warning:** This library doesn't work like a hardware timer and can't
 guarantee that code is being run on time.
 
