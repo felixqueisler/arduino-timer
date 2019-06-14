@@ -41,7 +41,7 @@ void Timer::start(unsigned long start_time) {
   this->running = true;
 }
 
-void Timer::start(unsigned long start_time, bool compensate_overflow) {
+void Timer::start(unsigned long start_time) {
   unsigned long now = millis();
 
   if (start_time > 0)
@@ -53,7 +53,22 @@ void Timer::start(unsigned long start_time, bool compensate_overflow) {
 
   this->elapsed = 0;
   this->running = true;
-  this->compensate_overflow = compensate_overflow;
+}
+
+void Timer::enable(int case) {
+  switch {
+  case COMPENSATE_OVERFLOW:
+    this->compensate_overflow = true;
+    break;
+  }
+}
+
+void Timer::disable() {
+  switch {
+  case COMPENSATE_OVERFLOW:
+    this->compensate_overflow = false;
+    break;
+  }
 }
 
 void Timer::pause() {

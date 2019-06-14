@@ -9,13 +9,16 @@
 #include <Q_Timer.h>
 
 Timer ledTimer(500); // create a new instance with desired countdown in ms
-Timer serialTimer(2000, true); // 2nd timer for serial, it compensates delays
+Timer serialTimer(2000); // 2nd timer for serial
 
 int counter = 0;
 
 void setup() {
   Serial.begin(115200);
-  ledTimer.start(); //
+  ledTimer.start();
+  serialTimer.enable(COMPENSATE_OVERFLOW);  // Activates compensation of timer
+                                            // overflow to always report at
+                                            // least once per 2000 ms
   serialTimer.start();
 }
 
