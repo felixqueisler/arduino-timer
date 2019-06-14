@@ -42,14 +42,14 @@ public:
    *
    * param feature: Takes Macros defined at the top of this file
    */
-  void enable(int feature) {};
+  void enable(int feature);
 
   /* Disables optional features. Should be called before starting the timer to
    * avoid unexpected behaviour.
    *
    * param feature: Takes Macros defined at the top of this file
    */
-  void disable(int feature) {};
+  void disable(int feature);
 
   /* Pause the timer and remember the already elapsed time for when you
    * unpause through timer.start() again
