@@ -31,7 +31,7 @@ public:
    * param start_time: Sets a starting point in the past or future in ms from
    * the start of the microcontroller. 0 will default to current millis()
    */
-  void start(unsigned long start_time = 0);
+  void start(unsigned long start_time);
 
   /* Enables optional features. Should be called before starting the timer to
    * avoid unexpected behaviour.
@@ -80,7 +80,7 @@ private:
 
   bool compensate_overflow;
   unsigned long interval_time; // Timer rings every <interval_timer> ms
-  unsigned long last_start;    // this & interval_time result in the next ring
+  unsigned long starting_point;    // this & interval_time result in the next ring
   unsigned long elapsed;
 };
 

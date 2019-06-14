@@ -7,7 +7,7 @@
 
 #include "Q_Timer.h"
 
-Timer::Timer(int length) {
+Timer::Timer(unsigned long length) {
   this->running = false;
   this->ringing = false;
   this->ringing_counter = 0;
@@ -43,16 +43,16 @@ void Timer::start(unsigned long start_time) {
   this->running = true;
 }
 
-void Timer::enable(int case) {
-  switch {
+void Timer::enable(int feature) {
+  switch (feature) {
   case COMPENSATE_OVERFLOW:
     this->compensate_overflow = true;
     break;
   }
 }
 
-void Timer::disable() {
-  switch {
+void Timer::disable(int feature) {
+  switch (feature) {
   case COMPENSATE_OVERFLOW:
     this->compensate_overflow = false;
     break;
