@@ -1,7 +1,9 @@
-/*
-  Q_Timer.cpp - Library providing non-blocking timers for "async" events.
-  Copyright (c) 2018 Felix Queisler
-*/
+/* Q_Timer.cpp - Library providing non-blocking timers for "async" events.
+ *
+ * Copyright (c) 2018 Felix Queisler
+ *
+ * License GNU GPL v3
+ */
 
 #include "Q_Timer.h"
 

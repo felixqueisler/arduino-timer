@@ -1,7 +1,9 @@
-/*
-  Q_Timer.h - Library providing non-blocking timers for "async" events.
-  Copyright (c) 2018 Felix Queisler
-*/
+/* Q_Timer.h - Library providing non-blocking timers for "async" events.
+ *
+ * Copyright (c) 2018 Felix Queisler
+ *
+ * License GNU GPL v3
+ */
 
 #ifndef Q_Timer_h
 #define Q_Timer_h
@@ -23,7 +25,7 @@ public:
   /* Starts the timer now
    */
   void start();
- 
+
   /* Starts the timer
    *
    * param start_time: Sets a starting point in the past or future in ms from

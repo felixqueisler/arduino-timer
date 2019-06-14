@@ -4,6 +4,8 @@
  * its capability to have multiple instances for multiple "async" events.
  *
  * Copyright (c) 2018 Felix Queisler
+ *
+ * License GNU GPL v3
 */
 
 #include <Q_Timer.h>
