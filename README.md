@@ -1,5 +1,5 @@
 # arduino-timer
-With this Library you can add **non-blocking timers** instead of the blocking
+With this Library you can add **non-blocking timers** instead of the blocking 
 `delay()` function. It's very slim and takes little to no performance.
 It's relatively low-end, with no callback functions. The timer states need to
 be checked manually. Supports rollover, works in milliseconds.
@@ -17,7 +17,7 @@ guarantee that code is being run on time.
 
 ### Optional: Overflow Compensation
 By using `timer.start(0, true)` (only change from 0 if you want to set a custom
-starting point) you can activate overflow compensation which can recover up to 2
+starting point) you can activate overflow compensation which can recover over 2
 timer intervals to an expected rythm if some blocking code took longer than one
 timer interval.
 
