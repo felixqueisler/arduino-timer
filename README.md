@@ -1,5 +1,7 @@
 # arduino-timer
-Non-blocking abstracted timer library for use instead of the blocking `delay()` function.
+Non-blocking abstracted timer library for use instead of the blocking `delay()`
+function. It's relatively low-end, with no callback functions. The timer states
+need to be checked manually.
 
 ## How to use
 
@@ -34,3 +36,7 @@ timer interval.
  ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐
  └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘
 ```
+
+## License
+
+See LICENSE file (GNU GPL v3)
