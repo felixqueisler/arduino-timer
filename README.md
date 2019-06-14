@@ -23,7 +23,8 @@ timer interval.
 
 **Rythm example with 1000ms Timers:**
 
-``` NO COMPENSATION
+```
+NO COMPENSATION
  ┌──┐    ┌───┐   ┌──┐    ┌───────────┐┌─┐     ┌─┐
  │  │    │   │   │  │    │           ││ │     │ │
 ─┴──┴────┴───┴───┴──┴────┴───────────┴┴─┴─────┴─┴────▶
@@ -32,7 +33,8 @@ timer interval.
  └─────┘ └─────┘ └─────┘ └──────────┘ └─────┘ └─────┘
 ```
 
-``` COMPENSATING (recovers to expected rythm)
+```
+COMPENSATING (recovers to expected rythm)
  ┌──┐    ┌───┐   ┌──┐    ┌──────────┐┌─┐ ┌───┐   ┌─┐
  │  │    │   │   │  │    │          ││ │ │   │   │ │
 ─┴──┴────┴───┴───┴──┴────┴──────────┴┴─┴─┴───┴───┴─┴▶
