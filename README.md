@@ -2,8 +2,12 @@
 Non-blocking abstracted timer library for use instead of the blocking `delay()` function.
 
 ## How to use
-...
 
+1. Include the library with `#include <Q_Timer.h>` at the top of your file
+2. Declare and initialize a new Timer instance with `Timer timerName(milliseconds)`
+3. Start the timer with `timerName.start()` and optional parameters
+4. Check if the timer is ringing with `timerName.isRinging()`
+5. If the timer is ringing either `timerName.stop()` or `timerName.restart()`
 
 ### Optional: Overflow Compensation
 By using `timer.start(0, true)` (only change from 0 if you want to set a custom
