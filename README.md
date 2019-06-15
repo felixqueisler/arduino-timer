@@ -16,10 +16,9 @@ guarantee that code is being run on time.
 5. If the timer is ringing either `timerName.stop()` or `timerName.restart()`
 
 ### Optional: Overflow Compensation
-By using `timer.start(0, true)` (only change from 0 if you want to set a custom
-starting point) you can activate overflow compensation which can recover up to 2
-timer intervals to an expected rythm if some blocking code took longer than one
-timer interval.
+By using `timerName.enable(COMPENSATE_OVERFLOW)` you can activate overflow 
+compensation which can recover up to 2 timer intervals to an expected rythm if
+some blocking code took longer than one timer interval.
 
 **Rythm example with 1000ms Timers:**
 
